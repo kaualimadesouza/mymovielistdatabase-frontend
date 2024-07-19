@@ -1,4 +1,4 @@
-import { Heart, Repeat, Star } from "lucide-react";
+import { Heart, Star } from "lucide-react";
 import { Footer } from "../../components/footer";
 import { Header } from "../../components/header";
 import { useEffect, useState } from "react";
@@ -29,9 +29,7 @@ export function Top100Movies() {
     return
   }
   const realPage = parseInt(page) + 1;
-  const [movieDataRaw, setMovieDataRaw] = useState<Object>({});
   const [movieData, setMovieData] = useState<top100Movies[]>([]);
-  const [isAcess, setIsAcess] = useState(true);
 
   async function getMovies() {
     await API_TMD.get(

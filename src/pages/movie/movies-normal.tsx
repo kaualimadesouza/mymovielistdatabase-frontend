@@ -1,20 +1,7 @@
 import {
-  Captions,
-  Github,
-  Instagram,
-  Linkedin,
   Plus,
   Search,
-  Star,
   Trash,
-  Twitter,
-  Image,
-  Calendar,
-  X,
-  Pen,
-  Clapperboard,
-  VenetianMask,
-  Tag,
 } from "lucide-react";
 import { FormEvent, useEffect, useState } from "react";
 import { API } from "../../lib/axios";

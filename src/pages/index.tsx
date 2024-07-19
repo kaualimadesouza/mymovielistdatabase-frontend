@@ -1,19 +1,17 @@
 import { useNavigate } from "react-router-dom";
-import { Footer } from "../components/footer";
-import { Header } from "../components/header";
 
 export function Index() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    function goTo100Movies() {
-        navigate('/top100movies/page/1');
-    }
+  function goTo100Movies() {
+    navigate("/top100movies/page/1");
+  }
 
-    function goToMovies() {
-        navigate('/movies/page/1');
-    }
+  function goToMovies() {
+    navigate("/movies/page/1");
+  }
 
-    return (
+  return (
     <div className="bg-custom-gradient h-screen flex flex-col items-center justify-center ">
       <main>
         <div className="w-full space-y-5 max-w-[980px] m-auto relative text-center -mt-6">
@@ -26,11 +24,17 @@ export function Index() {
             See you favorite movies here
           </p>
           <div className="flex gap-4 items-center justify-center">
-            <button onClick={goTo100Movies} className="bg-zinc-50 text-[#011620] px-4 py-1 rounded-sm font-bold text-[20px] hover:opacity-90 transition-all">
+            <button
+              onClick={goTo100Movies}
+              className="bg-zinc-50 text-[#011620] px-4 py-1 rounded-sm font-bold text-[20px] hover:opacity-90 transition-all"
+            >
               Top 100 Movies
             </button>
             <div className="w-px h-4 bg-[#3E4C52]"></div>
-            <button onClick={goToMovies} className="bg-zinc-50 text-[#011620] px-4 py-1 rounded-sm font-bold text-[20px] hover:opacity-90 transition-all">
+            <button
+              onClick={goToMovies}
+              className="bg-zinc-50 text-[#011620] px-4 py-1 rounded-sm font-bold text-[20px] hover:opacity-90 transition-all"
+            >
               Movie Management
             </button>
           </div>
