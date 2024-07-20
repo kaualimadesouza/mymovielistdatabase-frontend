@@ -25,8 +25,8 @@ interface top100Movies {
 export function Top100Movies() {
   const navigate = useNavigate();
   const { page } = useParams();
-  if(!page) {
-    return
+  if (!page) {
+    return;
   }
   const realPage = parseInt(page) + 1;
   const [movieData, setMovieData] = useState<top100Movies[]>([]);
@@ -81,11 +81,7 @@ export function Top100Movies() {
               <h2 className="opacity-25 text-xl">Movies</h2>
               <div className="flex gap-[3px]">
                 <button>
-                  <img
-                    src="/public/lineline.svg"
-                    alt="lineline"
-                    className="size-4"
-                  />
+                  <img src="/lineline.svg" alt="lineline" className="size-4" />
                 </button>
                 <button className="opacity-25 hover:opacity-100 transition-all">
                   <img src="/one.svg" alt="mult" className="size-4" />
@@ -122,7 +118,7 @@ export function Top100Movies() {
                   </div>
                   <div className="flex flex-col gap-4">
                     <h2 className="font-bold text-2xl ">
-                      {(index + 1)}. {movie.title}
+                      {index + 1}. {movie.title}
                     </h2>
                     <div className="font-semibold text-2xl opacity-25 flex gap-7">
                       <span>{getYear(movie.release_date)}</span>
@@ -143,7 +139,7 @@ export function Top100Movies() {
                     Next
                   </button>
                 </div>
-              ) : 
+              ) : (
                 <div className="pt-2">
                   <button
                     onClick={previousPage}
@@ -158,7 +154,7 @@ export function Top100Movies() {
                     Next
                   </button>
                 </div>
-              }
+              )}
             </div>
           </div>
           <div>
