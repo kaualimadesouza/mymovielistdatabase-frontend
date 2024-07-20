@@ -82,13 +82,13 @@ export function Top100Movies() {
               <div className="flex gap-[3px]">
                 <button>
                   <img
-                    src="../../public/lineline.svg"
+                    src="/public/lineline.svg"
                     alt="lineline"
                     className="size-4"
                   />
                 </button>
                 <button className="opacity-25 hover:opacity-100 transition-all">
-                  <img src="../../public/one.svg" alt="mult" className="size-4" />
+                  <img src="/one.svg" alt="mult" className="size-4" />
                 </button>
               </div>
             </div>
