@@ -144,7 +144,7 @@ export function Movies() {
       });
     } else {
       API.get(
-        `http://44.195.40.138:8080/movies/search/${movieName}/${
+        `https://44.195.40.138:8080/movies/search/${movieName}/${
           !page ? 0 : parseInt(page) > 0 ? parseInt(page) - 1 : 0
         }/${72}`
       ).then((response) => {
