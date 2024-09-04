@@ -21,8 +21,6 @@
 
 Aplicação web desenvolvida com React, com funcionalidades para consumir APIs (GET, POST, DELETE). A aplicação integra-se com uma API autoral, disponível no repositório abaixo, e também com a API do "The Movie Database"."
 
-[Website on Vercel](https://mymovielistdatabase-frontend-7r9wxqdks-kauas-projects-6ea027af.vercel.app/)
-
 [Backend Repository](https://github.com/kaualimadesouza/mymovielistdatabase-backend.git)
 
 <h3>Tecnologias</h3>
